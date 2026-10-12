@@ -439,7 +439,7 @@ function renderOverview(){
   const items = [
     {name:'Temas', pct:w.temas, val: a.promedioTemas},
     {name:'Diagnóstico', pct:w.diagnostico, val: a.diagnostico},
-    {name:'Proyecto', pct:w.proyecto, val: null},
+    {name:'Proyecto', pct:w.proyecto, val: a.proyecto},
   ].filter(it => it.pct && it.pct > 0);
   items.forEach(it => {
     const el = document.createElement('div');
